@@ -3,7 +3,7 @@
 
 This is the basic machine learning training process, using common binary classification models to predict the probability of muscle loss in cancer patients during postoperative treatment. Use bootstraps for validation. Trained the models with default parameters, and you can use GridSearch to find the suitable model parameters for the data. Combine or separate oversampling and Undersampling methods for imbalanced data. Common metrics and ROC curve to observe the prediction results. SHAP (SHapley Additive exPlanations) method to observe the contribution of features to prediction.
 
-Brief introduction of data: 來自某醫院的卵巢癌患者，涉及機密，因此不進行提供。
+Brief introduction of data: 
 
 __metrics:__
 - precision: 
