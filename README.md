@@ -7,6 +7,11 @@ Brief introduction of data:
 
 __metrics:__
 - precision: 
+- sensitivity (recall):
+- specificity:
+- F1 score: 
+- accuracy: 
+- AUC
 
 
 __models:__
