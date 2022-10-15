@@ -6,13 +6,15 @@ This is the basic machine learning training process, using common binary classif
 Brief introduction of data: 
 
 __metrics:__
-- precision: 
-- sensitivity (recall):
-- specificity:
-- F1 score: 
-- accuracy: 
-- AUC
+- precision: TP/TP+FP
+- sensitivity (recall): TP/TP+FN
+- specificity: TN/TN+FP
+- F1 score: 2*(precision*recall/precision+recall)
+- accuracy: TP+TN/TP+TN+FP+FN
+- AUC: Area Under the ROC Curve  
 
+__TP: True Positive, FP: False Positive, FN: False Negative, TN: True Negative__  
+__Receiver operating characteristic (ROC) curve: by plotting the true positive rate (TPR) against the false positive rate (FPR)__
 
 __models:__
 - LogisticRegression
