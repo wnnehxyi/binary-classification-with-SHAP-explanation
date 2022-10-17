@@ -1,7 +1,7 @@
 # binary-classification-with-SHAP-explanation
 ## Summary
 
-This is the basic machine learning training process, using common binary classification models to predict the probability of muscle loss in cancer patients during postoperative treatment. Use bootstraps for validation. Trained the models with default parameters, and you can use GridSearch to find the suitable model parameters for the data. Combine or separate oversampling and Undersampling methods for imbalanced data. Common metrics and ROC curve to observe the prediction results. SHAP (SHapley Additive exPlanations) method to observe the contribution of features to prediction.
+This is the basic machine learning training process, using common binary classification models to predict the probability of muscle loss in cancer patients during postoperative treatment. Use bootstraps for validation. Trained the models with default parameters, and you can use GridSearchCV to find the suitable model parameters for the data. Combine or separate oversampling and Undersampling methods for imbalanced data. Common metrics and ROC curve to observe the prediction results. SHAP (SHapley Additive exPlanations) method to observe the contribution of features to prediction.
 
 Brief introduction of data: Ovarian cancer patients from a certain hospital with clinical characteristics such as age, malignant ascites, BMI, laboratory data...etc. The dataset was used to predict whether a patient would have muscle loss after treatment based on these clinical features. The dataset is not provided due to confidentiality.
 
@@ -28,7 +28,7 @@ __models:__
 
 __sources:__  
 - SHAP source: https://github.com/slundberg/shap  
-- GridSearch source: https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GridSearchCV.html
+- GridSearchCV source: https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GridSearchCV.html
 
 ## Environment and main packages
 
@@ -48,6 +48,9 @@ __main packages:__
 
 - Predict independent data
   - Evaluate the selected model performance using the independent test dataset.
+  
+- GridSearchCV in bootstraps
+  - Use GridSearchCV to find the best candidate hyperparameters in each bootstrap.
   
 - ROC curve
   - Plot the ROC curve in bootstraps.
